@@ -2,14 +2,12 @@
 
 # Swin Transformer Image Classification - Interactive Web App
 
-This project implements a Swin Transformer for image classification on CIFAR-100 dataset with an interactive web interface.
+This project implements a Swin Transformer for image classification on CIFAR-100 dataset
 
 ## 🚀 Features
 
 - **Interactive Web Interface**: Upload images and get instant predictions
 - **Swin Transformer Architecture**: Efficient window-based attention mechanism
-- **Real-time Predictions**: See top 5 predictions with confidence scores
-- **Beautiful Visualization**: Confidence bars and intuitive UI
 - **CIFAR-100 Support**: Classify images into 100 different categories
 
 ## 📁 Project Structure
@@ -17,7 +15,6 @@ This project implements a Swin Transformer for image classification on CIFAR-100
 ```
 IMG_CLS_SwingTransformer/
 ├── model.ipynb          # Jupyter notebook with model training
-├── app.py               # Streamlit web application
 ├── save_model.py        # Script to save trained model
 ├── requirements.txt     # Python dependencies
 └── README.md           # This file
@@ -41,22 +38,6 @@ IMG_CLS_SwingTransformer/
    # In the notebook, after training
    model.save('swin_transformer_model.h5')
    ```
-
-### Step 2: Launch the Web App
-1. **Run the Streamlit app:**
-   ```bash
-   streamlit run app.py
-   ```
-2. **Open your browser** and go to `http://localhost:8501`
-3. **Upload an image** and click "Classify Image"
-4. **View predictions** with confidence scores
-
-## 🖼️ How to Use the Web App
-
-1. **Upload Image**: Click "Choose an image file" and select a PNG, JPG, or JPEG image
-2. **Classify**: Click the "🔍 Classify Image" button
-3. **View Results**: See the top prediction and top 5 predictions with confidence bars
-4. **Sample Classes**: Check the sidebar for CIFAR-100 class examples
 
 ## 📊 Model Performance
 
@@ -101,8 +82,6 @@ IMG_CLS_SwingTransformer/
 
 1. **Install dependencies**: `pip install -r requirements.txt`
 2. **Train model**: Run `model.ipynb` and save the model
-3. **Launch app**: `streamlit run app.py`
-4. **Upload image**: Use the web interface to classify images
 
 ## 🔍 Troubleshooting
 
@@ -115,7 +94,6 @@ IMG_CLS_SwingTransformer/
 
 - [Swin Transformer Paper](https://arxiv.org/abs/2103.14030)
 - [CIFAR-100 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
-- [Streamlit Documentation](https://docs.streamlit.io/)
 
 ---
 
